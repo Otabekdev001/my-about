@@ -1,0 +1,122 @@
+:root{
+    --outline-color:#ff7500;
+    --white-text-color:#FFFFFF;
+    --pink-color:#efb6df;
+    --rgba-black-color:rgb(0 0 0/10%);
+    --green-text-color:#797979;
+    --blue-text-color:#1345eb;
+    --blue-text:#05364d;
+    --pink-text-color:#ed239f;
+    --rgba-pink-color:rgba(237, 35, 159,0.6);
+}
+body{
+    font-family:sans-serif;
+    margin:0;
+}
+body{
+    font-size:16px;
+    line-height: 1.5;
+    font-family:"Roboto","Arial",sans-serif;
+    letter-spacing:0.5px;
+ }
+*:focus{
+    outline:2px dotted var(--outline-color);
+    outline-offset:3px;
+ }
+/* ///body */
+.container{
+    width: 1140px;
+
+    margin:auto;
+}
+.to-uppercase{
+    text-transform: uppercase;
+}
+.clearfix{
+    clear: both;
+}
+/*main heder* style*/
+.main-header {
+     position:fixed;
+     width:100%;
+     top:0;
+     left:0;
+     background-color:var(--white-text-color);
+     text-align: center;
+     z-index:1;
+     box-shadow:0px 3px 16px 0px,var(--rgba-black-color);
+    
+}
+.main_heder_brend{
+    display:inline-block;
+    vertical-align: middle;
+}
+.section-subtitle{
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom:0.625rem;
+    color: var(--green-text-color);
+    text-transform: uppercase;
+}
+.section-title{
+    margin-top:0.32rem;/* 5/16=032rem */
+    font-size: 42px;/* 42/16=2.62 */
+    font-weight:700;
+    text-transform: capitalize;
+    color: var(--blue-text);
+}
+.button{
+    border: none;
+    background:linear-gradient(to right,var(--blue-text-color) 0%,var(--pink-text-color) 50%,var(--blue-text-color) 100%);
+    background-size:200% auto;
+    color:var(--white-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    padding: 20px 40px;
+    cursor:pointer;
+    border-radius:5px;
+    float:left;
+    transition: background 0.6s ease;
+}
+.button:hover{
+    background-position:right center;
+}
+.blur-line{
+    display: inline-block;
+    position: relative;
+    top:-2px;
+    margin-left:0.32rem;
+    width: 80px;
+    height:4px;
+    background-color:var(--rgba-pink-color);
+    filter: blur(4px);
+    border-radius: 4px;
+}
+.main_heder_brend img{
+      width: 64px;
+
+
+}
+.main_navigation{
+        vertical-align:middle;
+        display:inline-block;
+}
+.main-navigation__item{
+    display:inline-block;
+    padding: 0.625rem;
+}
+.main-navigation__item a{
+       color: var(--blue-text);
+       text-decoration:none;
+       text-transform:uppercase;
+       font-size:0.75rem;
+       font-weight:500;
+}
+.main-navigation__item a:hover{
+    color:var(--pink-color);
+
+}
+.main-navigation__item.activ a{
+    color:var(--pink-color);
+
+}
